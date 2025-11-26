@@ -14,8 +14,7 @@ from rest_framework.response import Response
 def landing_page(request):
     """Landing page with state-wise destination filtering"""
     # Get states with the most destinations
-
     context = {
     }
     
-    return render(request, 'Home/landing.html', context)
+    return render(request, 'landing.html', context)

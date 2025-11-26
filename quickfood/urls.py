@@ -21,15 +21,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-
     # backend
     path('api/order/', include('order.urls')),
     path('api/menu/', include('menu.urls')),
 
-
-
     # frontend
     path('',include(('home.urls', 'home'),namespace='home')),
+
 
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
